@@ -1,23 +1,22 @@
-// User function Template for Java
-class Solution {
-    public static void fizzBuzz(int number) {
-        // Write your code here.
-        
-        if(number%3==0 && number%5==0)
-          {
-              System.out.println("FizzBuzz");
-          }
-          else if(number%3==0)
-          {
-              System.out.println("Fizz");
-          }
-          else if(number%5==0)
-          {
-              System.out.println("Buzz");
-          }
-          else
-          {
-              System.out.println(number);
-          }
+import java.util.*;
+
+class GFG {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+
+        if (n % 15 == 0) {
+            System.out.println("FizzBuzz");
+        }
+        else if (n % 3 == 0) {
+            System.out.println("Fizz");
+        }
+        else if (n % 5 == 0) {
+            System.out.println("Buzz");
+        }
+        else {
+            System.out.println(n);
+        }
     }
 }
