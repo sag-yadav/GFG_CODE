@@ -1,3 +1,4 @@
+
 class Solution {
     static boolean isPrime(int n) {
         // Numbers less than or equal to 1 are not prime
@@ -17,5 +18,15 @@ class Solution {
         }
 
         return true;
+    }
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        
+        int n = sc.nextInt();  // input number
+        
+        System.out.println(isPrime(n));
+        
+        sc.close();
     }
 }
